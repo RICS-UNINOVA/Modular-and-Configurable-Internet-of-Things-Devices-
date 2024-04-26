@@ -18,15 +18,13 @@
         "ssid": "********",
         "pass": "*************"
     },
-    "protocol": [
-        {
-            "id": "MQTT",
-            "lib":"PubSubClient.h",
-            "ip": "192.168.250.201",
-            "port": "1883",
-            "topic": "sensors.id/processor.ip",
-            "rate": "10000"
-        }
-    ]
+    "protocol": {
+        "id": "MQTT",
+        "lib":"PubSubClient.h",
+        "ip": "192.168.250.201",
+        "port": "1883",
+        "topic": "sensors.id/processor.ip",
+        "rate": "10000"
+    }
 }
 

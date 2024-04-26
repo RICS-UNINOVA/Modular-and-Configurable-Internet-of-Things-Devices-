@@ -26,13 +26,11 @@
         "ssid": "********",
         "pass": "*************"
     },
-    "protocol": [
-        {
-            "id": "HTTP",
-            "lib": "HTTPClient.h",
-            "serverName": "http://192.168.250.201:1880/sensors",
-            "rate": "10000"
-        }
-    ]
+    "protocol": {
+        "id": "HTTP",
+        "lib": "HTTPClient.h",
+        "serverName": "http://192.168.250.201:1880/sensors",
+        "rate": "10000"
+    }
 }
 
