@@ -1,0 +1,32 @@
+{
+    "processor": {
+        "id": "esp32",
+        "ip": "192.168.250.20"
+    },
+    "sensors": {
+        "id": "DS18B20",
+        "I/O": 4,
+        "lib": [
+            "DallasTemperature.h",
+            "OneWire.h"
+        ],
+        "skill": "temperature"
+    },
+    "communication": {
+        "id": "WIFI",
+        "lib": "Wifi.h",
+        "ssid": "********",
+        "pass": "*************"
+    },
+    "protocol": [
+        {
+            "id": "MQTT",
+            "lib":"PubSubClient.h",
+            "ip": "192.168.250.201",
+            "port": "1883",
+            "topic": "sensors.id/processor.ip",
+            "rate": "10000"
+        }
+    ]
+}
+

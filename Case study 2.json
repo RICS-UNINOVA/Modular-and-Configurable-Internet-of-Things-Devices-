@@ -1,0 +1,26 @@
+{
+    "processor": {
+        "id": "esp32",
+        "ip": "192.168.250.20"
+    },
+    "sensors": {
+        "id": "MQ9",
+        "I/O": 33,
+        "lib": "nd",
+        "skill": "Gas"
+    },
+    "communication": {
+        "id": "WIFI",
+        "lib": "Wifi.h",
+        "ssid": "********",
+        "pass": "*************"
+    },
+    "protocol": [
+        {
+            "id": "HTTP",
+            "lib": "HTTPClient.h",
+            "serverName": "http://192.168.250.201:1880/sensors",
+            "rate": "10000"
+        }
+    ]
+}
